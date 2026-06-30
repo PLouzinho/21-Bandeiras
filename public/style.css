@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,.15);
+    text-align: center;
+}
+
+h1 {
+    color: #d32f2f;
+}
+
+#bandeiras {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin: 30px 0;
+    min-height: 120px;
+}
+
+.bandeira {
+    font-size: 32px;
+}
+
+.botoes {
+    margin: 25px 0;
+}
+
+button {
+    padding: 12px 22px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    background: #1976d2;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0d47a1;
+}
+
+button:disabled {
+    background: #999;
+    cursor: not-allowed;
+}
+
+#mensagem {
+    color: green;
+    min-height: 30px;
+}
+
+#estado,
+#jogador {
+    font-weight: bold;
+}
