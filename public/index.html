@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21 Bandeiras</title>
 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🚩 Jogo das 21 Bandeiras</h1>
+
+    <p id="jogador">A ligar ao servidor...</p>
+
+    <p id="estado">À espera do segundo jogador...</p>
+
+    <h2>Restam <span id="contador">21</span> bandeiras</h2>
+
+    <div id="bandeiras"></div>
+
+    <div class="botoes">
+
+        <button onclick="jogar(1)">
+            Retirar 1
+        </button>
+
+        <button onclick="jogar(2)">
+            Retirar 2
+        </button>
+
+        <button onclick="jogar(3)">
+            Retirar 3
+        </button>
+
+    </div>
+
+    <h2 id="mensagem"></h2>
+
+    <button id="novoJogo" onclick="novaPartida()" style="display:none;">
+        Nova Partida
+    </button>
+
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
